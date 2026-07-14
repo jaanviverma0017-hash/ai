@@ -98,6 +98,80 @@ increase()
 increase()
 print(count)
 
+# 4. function documentation: docstrings
+
+def square(number):
+  return number*number
+print(square(5))
+print(square.__doc__) 
+
+# type mints in function 
+# type hints show what type of data  a function expects and return
+
+def add(a: int, b: int)->int:
+  return a + b
+print(add(10 , 20))
+
+# lambda function 
+# A lambda function is a small anonymous function.
+# It is usualiy used for short operation.
+
+# syntax
+# lambda argument: expression
+
+square = lambda x: x*x
+print(square(6))
+
+add = lambda a, b: a + b
+print(add(5, 5))
+
+#map(), filter(),shorted()
+
+
+
+# def find_largest(numbers):
+#   largest = number[0]
+#   for number in numbers:
+#     if number > largest:
+#      largest = number
+#      marks = [45, 78, 92, 61, 89]
+#   return largest 
+# print(find_largest(marks))
+
+
+
+# function calling other function 
+
+
+def get_square(number):
+  return number * number
+def print_square(number):
+  result = get_square(number)
+  print("square:", result)
+print_square(9)
+
+# nested function
+ 
+#def outer_function():
+
+# Recursion
+
+# A base condition to stop recursion 
+# A function calling itself with a modified argument.
+
+def factorial(n):
+  if n == 0 or n == 1:
+    return 1
+  else:
+    return n * factorial(n - 1)
+print(factorial(5))  
+  
+
+
+  
+  
+  
+
 
 
 
