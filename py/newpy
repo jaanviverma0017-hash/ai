@@ -1,9 +1,0 @@
-# add,sub,mul
-
-def calculate(a,b):
- return a+b,a-b,a*b
-x,y,z=calculate(20,4)
-print(x,y,z)
- 
-
- 
