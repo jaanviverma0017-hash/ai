@@ -173,24 +173,26 @@ def factorial(n):
     return n * factorial(n - 1)
 print(factorial(5))
   
-def outer():
-  number = 1
-  def inner():
-    nonlocal number
-    number *= 3
-    return number
-print(inner(), inner())
-outer()
+# def outer():
+#   number = 1
+#   def inner():
+#     nonlocal number
+#     number *= 3
+#     return number
+# print(inner(), inner())
+# outer()
 
-  
-  
-  
+# for number in range (3):
+#   function.append(lambda:number)
+# print([function()for function in function])
 
-
-function = []
-for number in range (3):
-  function.append(lambda:number)
-print([function()for function in function])
+def modify(data):
+  data[1].append(30)
+  return data + ("done",)
+value = (10,[120])
+result = modify(values)
+print(values)
+print(result)
 
 
 
