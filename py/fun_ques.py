@@ -79,14 +79,36 @@ result = modify(values)
 print(value)
 print(result)
 
-x =10
+# x =10
+# def outer():
+#      x = 20
+#      def inner():
+#        global x     
+#        x += 5
+# print(x)
+# inner()
+# print(x)
+# outer()
+# print(x)
+
 def outer():
-     x = 20
-     def inner():
-       global x     
-       x += 5
-print(x)
-inner()
-print(x)
+    number = 1
+    def inner():
+        nonlocal number 
+        number*= 3
+    return number
+    print(inner(),inner())
 outer()
-print(x)
+
+def create_power(exponent):
+    def calculate(number):
+        return number ** exponent
+    return calculate
+square = create_power(2)
+cube = create_power(3)
+print(square(4) + cube(2))
+
+function =[]
+for number in range(3):
+  function.append(lambda: number)
+  print([function()for function in function])
