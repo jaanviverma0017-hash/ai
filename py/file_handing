@@ -1,0 +1,22 @@
+# # The 'read()' method reads the contents of a file 
+# # Reading a limited number of characters
+# # A number can be passed to read()':
+# # reading one line with 'readline()'
+# # The 'readline()' method reads one line at a time.
+# # The reading all lines with 'readlines()'
+# # The 'readlines()' method reads all lines and return them as a list .
+# # how many lines in file ### line_count = 0
+                               # # for line in file:
+                                # # line_count += 1
+                                # # print ("numbers of lines", line_count)
+# # content = file.read()
+# # character_count = len(content)
+# # word_count = len(content.split())
+# # line_count = len()
+
+# # WRITE MULTIPLE METHOD
+# file.write ("first line.\n")
+# file.write ("second line.\n")
+with open("fruit.txt", "w", encoding="utf-8") as file
+  for fruit in fruits:
+    file.write(f"{fruit}\n")

@@ -112,3 +112,8 @@ function =[]
 for number in range(3):
   function.append(lambda: number)
   print([function()for function in function])
+
+#    apply(function,value):
+    #   return[
+        #   def
+       
