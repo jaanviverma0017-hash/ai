@@ -47,3 +47,4 @@ print(n1,n2)
 name=(("mahak"),("jiya"),("teena"),(1,0,0),2,4,5)
 n1,n2,n3,n4,*n5=name
 print(n1,n2,n4,n3,n5)
+
